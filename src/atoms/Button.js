@@ -14,11 +14,12 @@ const Button = ({ children, className, onClick, active, color }) => {
 };
 
 const StyledButton = styled.button`
-  background-color: ${(props) => (props.color ? props.color : "blue")};
+  background-color: ${(props) => (props.color ? props.color : "lightblue")};
   border: 1px solid var(--theme-color-white);
-  color: white;
+  color: ${(props) => (props.color === "none" ? "black" : "white")};
   cursor: pointer;
   font-weight: 600;
+  font-size: x-small;
   padding: 0.5rem 2rem;
   text-align: center;
   text-transform: uppercase;
