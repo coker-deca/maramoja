@@ -1,6 +1,7 @@
 import { ErrorBoundary } from 'react-error-boundary';
 
 import Navbar from './components/Navbar';
+import Wrapper from './components/Wrapper';
 import Home from './Home';
 
 function ErrorFallback({ error }) {
@@ -22,7 +23,9 @@ function ErrorFallback({ error }) {
 function App() {
   return (
     <div className="App">
-      <Navbar key="navbar" />
+      <Wrapper>
+        <Navbar key="navbar" />
+      </Wrapper>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Home />
       </ErrorBoundary>
