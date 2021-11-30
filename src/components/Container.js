@@ -5,7 +5,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: ${(props) => (props.bgColor ? `url(${props.bgColor})` : "none")};
+  background: ${(props) =>
+    props.bg ? `url(${props.bg})` : props.bgColor ? props.bgColor : "none"};
   margin: 30px 0px;
 
   header {

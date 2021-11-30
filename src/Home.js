@@ -6,6 +6,7 @@ import Details from './atoms/Details';
 import Text from './atoms/Text';
 import Title from './atoms/Title';
 import Accordion from './components/Accordion';
+import Card from './components/Card';
 import Container from './components/Container';
 import Rectangle from './components/Rectangle';
 import Skeleton from './components/Skeleton';
@@ -61,6 +62,24 @@ const vaccinatedSquares = [
   },
 ];
 
+const latestNews = [
+  {
+    id: 1,
+    title: "Multiple Reasons Behind the Sars-Cov-2 surge",
+    details: text,
+  },
+  {
+    id: 2,
+    title: "Tumor Targeting by Test antibody-based Sars and Research",
+    details: text,
+  },
+  {
+    id: 3,
+    title: "Insurers Continue to target Emergency Medicine",
+    details: text,
+  },
+];
+
 const Home = () => {
   const [loading, setLoading] = useState(false);
   return (
@@ -68,7 +87,7 @@ const Home = () => {
       {loading && <Skeleton />}
       {!loading && (
         <>
-          <Container bgColor={background}>
+          <Container bg={background}>
             <header>
               <Title>
                 <h1>FAQ</h1>
@@ -169,6 +188,16 @@ const Home = () => {
                   {text}
                 </Accordion>
               </Container>
+            </Wrapper>
+          </Container>
+          <Container bgColor="#E8F2FF">
+            <Text>Latest News</Text>
+            <Wrapper>
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                {latestNews.map((item) => (
+                  <Card content={item} />
+                ))}
+              </div>
             </Wrapper>
           </Container>
         </>
