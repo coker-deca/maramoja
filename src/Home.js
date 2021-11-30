@@ -5,6 +5,7 @@ import Button from './atoms/Button';
 import Details from './atoms/Details';
 import Text from './atoms/Text';
 import Title from './atoms/Title';
+import Accordion from './components/Accordion';
 import Container from './components/Container';
 import Rectangle from './components/Rectangle';
 import Skeleton from './components/Skeleton';
@@ -142,6 +143,32 @@ const Home = () => {
                   </Square>
                 ))}
               </Rectangle>
+              <Container>
+                <Accordion title="What are the most common side-effects of getting the vaccine?">
+                  {text}
+                </Accordion>
+                <Accordion title="When will vaccination be available to me?">
+                  {text}
+                </Accordion>
+                <Accordion title="Can I choose which vaccine I get?">
+                  {text}
+                </Accordion>
+                <Accordion title="When will vaccination be available to me?">
+                  {text}
+                </Accordion>
+                <Accordion title="Do I still need to where mask and socially distance after getting the vaccine?">
+                  {text}
+                </Accordion>
+                <Accordion title="Do I still need to where mask and socially distance after getting the vaccine?">
+                  {text}
+                </Accordion>
+                <Accordion title="When should I need another vaccine after taking my complete dose?">
+                  {text}
+                </Accordion>
+                <Accordion title="When should I need another vaccine after taking my complete dose?">
+                  {text}
+                </Accordion>
+              </Container>
             </Wrapper>
           </Container>
         </>
