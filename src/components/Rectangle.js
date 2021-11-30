@@ -11,7 +11,7 @@ const Rectangle = ({ children }) => {
 
 const StyledRectangle = styled.div`
   display: flex;
-  width: 900px;
+  width: 100%;
   color: #000;
   border-radius: 5px;
   margin: 50px 0px;

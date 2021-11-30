@@ -10,8 +10,8 @@ const Square = ({ children }) => {
 };
 
 const StyledSquare = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 5px;
   box-shadow: 0 0 20px grey;
   padding: 50px;
