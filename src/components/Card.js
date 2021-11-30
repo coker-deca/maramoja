@@ -38,6 +38,7 @@ const Card = ({ content }) => {
 const CardDiv = styled.section`
   border-radius: 5px;
   width: 300px;
+  margin-bottom: 100px;
 
   .empty-card {
     width: 100%;

@@ -1,4 +1,16 @@
-import { RightOutlined } from '@ant-design/icons';
+import {
+  EnvironmentFilled,
+  MailFilled,
+  PhoneFilled,
+  RightOutlined,
+  FacebookFilled,
+  TwitterCircleFilled,
+  YoutubeFilled,
+  RedditCircleFilled,
+  WeiboCircleFilled,
+  PropertySafetyFilled,
+  ProjectFilled,
+} from "@ant-design/icons";
 import React, { useState } from 'react';
 
 import Button from './atoms/Button';
@@ -8,14 +20,16 @@ import Title from './atoms/Title';
 import Accordion from './components/Accordion';
 import Card from './components/Card';
 import Container from './components/Container';
+import FlexContainer from './components/FlexContainer';
+import Logo from './components/Logo';
 import Rectangle from './components/Rectangle';
 import Skeleton from './components/Skeleton';
+import SocialBox from "./components/SocialBox";
 import Square from './components/Square';
 import Wrapper from './components/Wrapper';
+import triangles from './resources/large-triangles.svg';
+import map from './resources/map.png';
 import background from './resources/top-bg.png';
-
-// import Hero from "../components/Hero";
-// import HomeContents from "../components/HomeContents";
 
 const videoUrl = "https://www.fakevideo.com";
 const text =
@@ -198,6 +212,93 @@ const Home = () => {
                   <Card content={item} />
                 ))}
               </div>
+            </Wrapper>
+          </Container>
+          <Container bg={triangles}>
+            <Wrapper>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  backgroundColor: "white",
+                  padding: "20px",
+                  borderRadius: "5px",
+                  marginTop: "-20px",
+                  marginBottom: "20px",
+                }}
+              >
+                <h4 style={{ margin: 0 }}>
+                  Stay updated on our latest news and medical guidness
+                </h4>
+                <input
+                  style={{
+                    width: "50%",
+                    borderRadius: "5px",
+                    border: "1px solid #ddd",
+                    marginRight: "10px",
+                  }}
+                />
+                <Button>Subscribe</Button>
+              </div>
+              <FlexContainer>
+                <div className="container left">
+                  <Logo />
+                  <p>{text}</p>
+                  <ul>
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/">News</a>
+                    </li>
+                    <li>
+                      <a href="/">About</a>
+                    </li>
+                    <li>
+                      <a href="/">Services</a>
+                    </li>
+                    <li>
+                      <a href="/">Contact</a>
+                    </li>
+                  </ul>
+                  <div className="capsule">
+                    <PhoneFilled className="logo" />
+                    <div className="text">
+                      <h3>+1-733-5582-795</h3>
+                      <small>Emergency Hotline 24/7</small>
+                    </div>
+                  </div>
+                </div>
+                <div className="container right">
+                  <img src={map} />
+                  <div className="left">
+                    <div className="capsule">
+                      <EnvironmentFilled className="logo" />
+                      <div className="text">
+                        <small>Head Office Location:</small>
+                        <p>9873 Ridgewood Lane, Elgin, IL, USA</p>
+                      </div>
+                    </div>
+                    <div className="capsule">
+                      <MailFilled className="logo" />
+                      <div className="text">
+                        <small>Contact and Feedback: </small>
+                        <p>vaxiemal@email.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </FlexContainer>
+              <hr />
+              <SocialBox>
+                <FacebookFilled />
+                <TwitterCircleFilled />
+                <YoutubeFilled />
+                <RedditCircleFilled />
+                <WeiboCircleFilled />
+                <PropertySafetyFilled />
+                <ProjectFilled />
+              </SocialBox>
             </Wrapper>
           </Container>
         </>

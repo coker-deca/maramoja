@@ -14,7 +14,7 @@ const Button = ({ children, className, onClick, active, color }) => {
 };
 
 const StyledButton = styled.button`
-  background-color: ${(props) => (props.color ? props.color : "lightblue")};
+  background-color: ${(props) => (props.color ? props.color : "#2E73FB")};
   border: 1px solid var(--theme-color-white);
   color: ${(props) => (props.color === "none" ? "black" : "white")};
   cursor: pointer;

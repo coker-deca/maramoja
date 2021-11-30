@@ -7,7 +7,6 @@ const Container = styled.div`
   align-items: center;
   background: ${(props) =>
     props.bg ? `url(${props.bg})` : props.bgColor ? props.bgColor : "none"};
-  margin: 30px 0px;
 
   header {
     color: blue;
