@@ -22,6 +22,9 @@ const Accordion = ({ title, children }) => {
 const AccordionWrapper = styled.div`
   & + * {
     margin-top: 0px;
+    :last-child{
+      margin-bottom: 70px;
+    }
   }
 
   .accordion-item {
@@ -37,10 +40,11 @@ const AccordionWrapper = styled.div`
   }
 
   .accordion-title {
-    font-weight: 600;
-    font-size: x-small;
+    height: 50px;
+    font-weight: 700;
+    font-size: small;
     cursor: pointer;
-    color: #4d9cff;
+    color: #2471fb;
     padding: 0.5em 2em;
     border-radius: 5px;
     box-shadow: 0 0 5px lightgrey;

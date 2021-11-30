@@ -2,11 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Square = ({ children }) => {
-  return (
-    <div>
-      <StyledSquare>{children}</StyledSquare>
-    </div>
-  );
+  return <StyledSquare>{children}</StyledSquare>;
 };
 
 const StyledSquare = styled.div`

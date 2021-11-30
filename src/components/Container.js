@@ -12,6 +12,11 @@ const Container = styled.div`
     color: blue;
     margin-bottom: 30px;
   }
+  .pick-middle {
+    :nth-child(2) {
+      background: #4748ff;
+    }
+  }
 `;
 
 export default Container;

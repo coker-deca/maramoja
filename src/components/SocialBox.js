@@ -6,7 +6,7 @@ const SocialBox = styled.div`
   font-size: x-large;
   color: white;
   svg {
-      margin: 20px;
+      margin: 15px;
   }
 `;
 

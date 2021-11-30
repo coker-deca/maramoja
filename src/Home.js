@@ -152,7 +152,7 @@ const Home = () => {
                 <Text>Discover why Our Patients Love Us</Text>
                 <Details>{text}</Details>
               </Container>
-              <Rectangle>
+              <Rectangle className="pick-middle">
                 {vaccinatedSquares.map((item) => (
                   <Square size={"smaller"}>
                     <div className="content">
@@ -303,7 +303,6 @@ const Home = () => {
           </Container>
         </>
       )}
-      {/* <HomeContents /> */}
     </>
   );
 };
